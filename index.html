@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Mobile Theme</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+  <style>
+    div[data-role="page"]{background:#fff;}
+    .preview{
+      width:280px;
+      float:left;
+      border:none;
+      margin:4px 0 4px 8px;
+    }
+    span.icon-value,
+    span.icon-name{margin: 10px 10px; width: 130px;}
+    .conflict{color: red!important}
+  </style>
+</head>
+<body>
+<div data-role="page"> 
+  <div class="preview ui-content ui-body-a">
+    <div class="ui-header ui-bar-a" data-swatch="a" data-theme="a" data-form="ui-bar-a" data-role="header" role="banner">
+      <a class="ui-btn-left ui-btn ui-btn-icon-notext ui-btn-corner-all ui-shadow ui-btn-up-a" data-iconpos="notext" data-theme="a" data-role="button" data-icon="home" title=" Home ">
+        <span class="ui-btn-inner ui-btn-corner-all">
+          <span class="ui-btn-text"> Home </span>
+          <span data-form="ui-icon" class="ui-icon ui-icon-home ui-icon-shadow"></span>
+        </span>
+      </a>
+      <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">A</h1>
+      <a class="ui-btn-right ui-btn ui-btn-icon-notext ui-btn-corner-all ui-shadow ui-btn-up-a" data-iconpos="notext" data-theme="a" data-role="button" data-icon="grid" title=" Navigation ">
+        <span class="ui-btn-inner ui-btn-corner-all">
+          <span class="ui-btn-text"> Navigation </span>
+          <span data-form="ui-icon" class="ui-icon ui-icon-grid ui-icon-shadow"></span>
+        </span>
+      </a>
+    </div>
+    <div class="ui-content ui-body-a" data-theme="a" data-form="ui-body-a" data-role="content" role="main">
+      <p>Sample text and <a class="ui-link" data-form="ui-body-a" href="#" data-theme="a">links</a>.</p>
+      <ul data-role="listview" data-inset="true">
+              <li data-role="list-divider" data-swatch="a" data-theme="a" data-form="ui-bar-a">List Header</li>
+              <li data-form="ui-btn-up-a" data-swatch="a" data-theme="a">Read-only list item</li>
+              <li data-form="ui-btn-up-a"><a href="#">Linked list item</a></li>
+      </ul>  
+      <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup">
+          <input type="radio" name="radio-choice-a" id="radio-choice-1-a" value="choice-1" checked="checked">
+              <label for="radio-choice-1-a" data-form="ui-btn-up-a">Radio</label>
+          <input type="checkbox" name="checkbox-a" id="checkbox-a" checked="checked">
+          <label for="checkbox-a" data-form="ui-btn-up-a">Checkbox</label>
+          </fieldset>
+      </div>
+      <div data-role="fieldcontain"> 
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <input type="radio" name="radio-view-a" id="radio-view-a-a" value="list" checked="checked"> 
+          <label for="radio-view-a-a" data-form="ui-btn-up-a">On</label> 
+          <input type="radio" name="radio-view-a" id="radio-view-b-a" value="grid"> 
+          <label for="radio-view-b-a" data-form="ui-btn-up-a">Off</label> 
+        </fieldset> 
+      </div>
+      <div data-role="fieldcontain">
+        <select name="select-choice" id="select-choice-a" data-native-menu="false" data-theme="a" data-form="ui-btn-up-a">
+          <option value="standard">Option 1</option>
+          <option value="rush">Option 2</option>
+          <option value="express">Option 3</option>
+          <option value="overnight">Option 4</option>
+        </select>
+      </div>
+      
+      <input type="text" value="Text Input" class="input" data-form="ui-body-a">
+      
+      <div data-role="fieldcontain">
+        <input type="range" name="slider" value="50" min="0" max="100" data-form="ui-body-a" data-theme="a" data-highlight="true">
+      </div>
+      <button data-icon="star" data-theme="a" data-form="ui-btn-up-a">Button</button>
+    </div>
+  </div>
+  <div class="preview ui-content ui-body-b">
+<ul>
+    <li><a href="#" data-role="button" data-icon="bars">bars</a></li>
+    <li><a href="#" data-role="button" data-icon="edit" class="conflict">edit</a></li>
+    <li><a href="#" data-role="button" data-icon="arrow-l">arrow-l</a></li>
+    <li><a href="#" data-role="button" data-icon="arrow-r">arrow-r</a></li>
+    <li><a href="#" data-role="button" data-icon="arrow-u">arrow-u</a></li>
+    <li><a href="#" data-role="button" data-icon="arrow-d">arrow-d</a></li>
+    <li><a href="#" data-role="button" data-icon="delete">delete</a></li>
+    <li><a href="#" data-role="button" data-icon="plus" class="conflict">plus</a></li>
+    <li><a href="#" data-role="button" data-icon="minus" class="conflict">minus</a></li>
+    <li><a href="#" data-role="button" data-icon="check" class="conflict">check</a></li>
+    <li><a href="#" data-role="button" data-icon="gear">gear</a></li>
+    <li><a href="#" data-role="button" data-icon="refresh" class="conflict">refresh</a></li>
+    <li><a href="#" data-role="button" data-icon="forward" class="conflict">forward</a></li>
+    <li><a href="#" data-role="button" data-icon="back">back</a></li>
+    <li><a href="#" data-role="button" data-icon="grid">grid</a></li>
+    <li><a href="#" data-role="button" data-icon="star" class="conflict">star</a></li>
+    <li><a href="#" data-role="button" data-icon="alert">alert</a></li>
+    <li><a href="#" data-role="button" data-icon="info">info</a></li>
+    <li><a href="#" data-role="button" data-icon="home" class="conflict">home</a></li>
+    <li><a href="#" data-role="button" data-icon="search" class="conflict">search</a></li>
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-c">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="glass">glass "\f000" </a></li>
+<li><a href="#" data-role="button" data-icon="music">music "\f001" </a></li>
+<li><a href="#" data-role="button" data-icon="search">search "\f002" </a></li>
+<li><a href="#" data-role="button" data-icon="envelope">envelope "\f003" </a></li>
+<li><a href="#" data-role="button" data-icon="heart">heart "\f004" </a></li>
+<li><a href="#" data-role="button" data-icon="star">star "\f005" </a></li>
+<li><a href="#" data-role="button" data-icon="star-empty">star-empty "\f006" </a></li>
+<li><a href="#" data-role="button" data-icon="user">user "\f007" </a></li>
+<li><a href="#" data-role="button" data-icon="film">film "\f008" </a></li>
+<li><a href="#" data-role="button" data-icon="th-large">th-large "\f009" </a></li>
+<li><a href="#" data-role="button" data-icon="th">th "\f00a" </a></li>
+<li><a href="#" data-role="button" data-icon="th-list">th-list "\f00b" </a></li>
+<li><a href="#" data-role="button" data-icon="ok">ok "\f00c" </a></li>
+<li><a href="#" data-role="button" data-icon="remove">remove "\f00d" </a></li>
+<li><a href="#" data-role="button" data-icon="zoom-in">zoom-in "\f00e" </a></li>
+
+<li><a href="#" data-role="button" data-icon="zoom-out">zoom-out "\f010" </a></li>
+<li><a href="#" data-role="button" data-icon="off">off "\f011" </a></li>
+<li><a href="#" data-role="button" data-icon="signal">signal "\f012" </a></li>
+<li><a href="#" data-role="button" data-icon="cog">cog "\f013" </a></li>
+<li><a href="#" data-role="button" data-icon="trash">trash "\f014" </a></li>
+<li><a href="#" data-role="button" data-icon="home">home "\f015" </a></li>
+<li><a href="#" data-role="button" data-icon="file">file "\f016" </a></li>
+<li><a href="#" data-role="button" data-icon="time">time "\f017" </a></li>
+<li><a href="#" data-role="button" data-icon="road">road "\f018" </a></li>
+<li><a href="#" data-role="button" data-icon="download-alt">download-alt "\f019" </a></li>
+<li><a href="#" data-role="button" data-icon="download">download "\f01a" </a></li>
+<li><a href="#" data-role="button" data-icon="upload">upload "\f01b" </a></li>
+<li><a href="#" data-role="button" data-icon="inbox">inbox "\f01c" </a></li>
+<li><a href="#" data-role="button" data-icon="play-circle">play-circle "\f01d" </a></li>
+<li><a href="#" data-role="button" data-icon="repeat">repeat "\f01e" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-d">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="refresh">refresh "\f021" </a></li>
+<li><a href="#" data-role="button" data-icon="list-alt">list-alt "\f022" </a></li>
+<li><a href="#" data-role="button" data-icon="lock">lock "\f023" </a></li>
+<li><a href="#" data-role="button" data-icon="flag">flag "\f024" </a></li>
+<li><a href="#" data-role="button" data-icon="headphones">headphones "\f025" </a></li>
+<li><a href="#" data-role="button" data-icon="volume-off">volume-off "\f026" </a></li>
+<li><a href="#" data-role="button" data-icon="volume-down">volume-down "\f027" </a></li>
+<li><a href="#" data-role="button" data-icon="volume-up">volume-up "\f028" </a></li>
+<li><a href="#" data-role="button" data-icon="qrcode">qrcode "\f029" </a></li>
+<li><a href="#" data-role="button" data-icon="barcode">barcode "\f02a" </a></li>
+<li><a href="#" data-role="button" data-icon="tag">tag "\f02b" </a></li>
+<li><a href="#" data-role="button" data-icon="tags">tags "\f02c" </a></li>
+<li><a href="#" data-role="button" data-icon="book">book "\f02d" </a></li>
+<li><a href="#" data-role="button" data-icon="bookmark">bookmark "\f02e" </a></li>
+<li><a href="#" data-role="button" data-icon="print">print "\f02f" </a></li>
+
+<li><a href="#" data-role="button" data-icon="camera">camera "\f030" </a></li>
+<li><a href="#" data-role="button" data-icon="font">font "\f031" </a></li>
+<li><a href="#" data-role="button" data-icon="bold">bold "\f032" </a></li>
+<li><a href="#" data-role="button" data-icon="italic">italic "\f033" </a></li>
+<li><a href="#" data-role="button" data-icon="text-height">text-height "\f034" </a></li>
+<li><a href="#" data-role="button" data-icon="text-width">text-width "\f035" </a></li>
+<li><a href="#" data-role="button" data-icon="align-left">align-left "\f036" </a></li>
+<li><a href="#" data-role="button" data-icon="align-center">align-center "\f037" </a></li>
+<li><a href="#" data-role="button" data-icon="align-right">align-right "\f038" </a></li>
+<li><a href="#" data-role="button" data-icon="align-justify">align-justify "\f039" </a></li>
+<li><a href="#" data-role="button" data-icon="list">list "\f03a" </a></li>
+<li><a href="#" data-role="button" data-icon="indent-left">indent-left "\f03b" </a></li>
+<li><a href="#" data-role="button" data-icon="indent-right">indent-right "\f03c" </a></li>
+<li><a href="#" data-role="button" data-icon="facetime-video">facetime-video "\f03d" </a></li>
+<li><a href="#" data-role="button" data-icon="picture">picture "\f03e" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-e">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="pencil">pencil "\f040" </a></li>
+<li><a href="#" data-role="button" data-icon="map-marker">map-marker "\f041" </a></li>
+<li><a href="#" data-role="button" data-icon="adjust">adjust "\f042" </a></li>
+<li><a href="#" data-role="button" data-icon="tint">tint "\f043" </a></li>
+<li><a href="#" data-role="button" data-icon="edit">edit "\f044" </a></li>
+<li><a href="#" data-role="button" data-icon="share">share "\f045" </a></li>
+<li><a href="#" data-role="button" data-icon="check">check "\f046" </a></li>
+<li><a href="#" data-role="button" data-icon="move">move "\f047" </a></li>
+<li><a href="#" data-role="button" data-icon="step-backward">step-backward "\f048" </a></li>
+<li><a href="#" data-role="button" data-icon="fast-backward">fast-backward "\f049" </a></li>
+<li><a href="#" data-role="button" data-icon="backward">backward "\f04a" </a></li>
+<li><a href="#" data-role="button" data-icon="play">play "\f04b" </a></li>
+<li><a href="#" data-role="button" data-icon="pause">pause "\f04c" </a></li>
+<li><a href="#" data-role="button" data-icon="stop">stop "\f04d" </a></li>
+<li><a href="#" data-role="button" data-icon="forward">forward "\f04e" </a></li>
+
+<li><a href="#" data-role="button" data-icon="fast-forward">fast-forward "\f050" </a></li>
+<li><a href="#" data-role="button" data-icon="step-forward">step-forward "\f051" </a></li>
+<li><a href="#" data-role="button" data-icon="eject">eject "\f052" </a></li>
+<li><a href="#" data-role="button" data-icon="chevron-left">chevron-left "\f053" </a></li>
+<li><a href="#" data-role="button" data-icon="chevron-right">chevron-right "\f054" </a></li>
+<li><a href="#" data-role="button" data-icon="plus-sign">plus-sign "\f055" </a></li>
+<li><a href="#" data-role="button" data-icon="minus-sign">minus-sign "\f056" </a></li>
+<li><a href="#" data-role="button" data-icon="remove-sign">remove-sign "\f057" </a></li>
+<li><a href="#" data-role="button" data-icon="ok-sign">ok-sign "\f058" </a></li>
+<li><a href="#" data-role="button" data-icon="question-sign">question-sign "\f059" </a></li>
+<li><a href="#" data-role="button" data-icon="info-sign">info-sign "\f05a" </a></li>
+<li><a href="#" data-role="button" data-icon="screenshot">screenshot "\f05b" </a></li>
+<li><a href="#" data-role="button" data-icon="remove-circle">remove-circle "\f05c" </a></li>
+<li><a href="#" data-role="button" data-icon="ok-circle">ok-circle "\f05d" </a></li>
+<li><a href="#" data-role="button" data-icon="ban-circle">ban-circle "\f05e" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-f">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="arrow-left">arrow-left "\f060" </a></li>
+<li><a href="#" data-role="button" data-icon="arrow-right">arrow-right "\f061" </a></li>
+<li><a href="#" data-role="button" data-icon="arrow-up">arrow-up "\f062" </a></li>
+<li><a href="#" data-role="button" data-icon="arrow-down">arrow-down "\f063" </a></li>
+<li><a href="#" data-role="button" data-icon="share-alt">share-alt "\f064" </a></li>
+<li><a href="#" data-role="button" data-icon="resize-full">resize-full "\f065" </a></li>
+<li><a href="#" data-role="button" data-icon="resize-small">resize-small "\f066" </a></li>
+<li><a href="#" data-role="button" data-icon="plus">plus "\f067" </a></li>
+<li><a href="#" data-role="button" data-icon="minus">minus "\f068" </a></li>
+<li><a href="#" data-role="button" data-icon="asterisk">asterisk "\f069" </a></li>
+<li><a href="#" data-role="button" data-icon="exclamation-sign">exclamation-sign "\f06a" </a></li>
+<li><a href="#" data-role="button" data-icon="gift">gift "\f06b" </a></li>
+<li><a href="#" data-role="button" data-icon="leaf">leaf "\f06c" </a></li>
+<li><a href="#" data-role="button" data-icon="fire">fire "\f06d" </a></li>
+<li><a href="#" data-role="button" data-icon="eye-open">eye-open "\f06e" </a></li>
+
+<li><a href="#" data-role="button" data-icon="eye-close">eye-close "\f070" </a></li>
+<li><a href="#" data-role="button" data-icon="warning-sign">warning-sign "\f071" </a></li>
+<li><a href="#" data-role="button" data-icon="plane">plane "\f072" </a></li>
+<li><a href="#" data-role="button" data-icon="calendar">calendar "\f073" </a></li>
+<li><a href="#" data-role="button" data-icon="random">random "\f074" </a></li>
+<li><a href="#" data-role="button" data-icon="comment">comment "\f075" </a></li>
+<li><a href="#" data-role="button" data-icon="magnet">magnet "\f076" </a></li>
+<li><a href="#" data-role="button" data-icon="chevron-up">chevron-up "\f077" </a></li>
+<li><a href="#" data-role="button" data-icon="chevron-down">chevron-down "\f078" </a></li>
+<li><a href="#" data-role="button" data-icon="retweet">retweet "\f079" </a></li>
+<li><a href="#" data-role="button" data-icon="shopping-cart">shopping-cart "\f07a" </a></li>
+<li><a href="#" data-role="button" data-icon="folder-close">folder-close "\f07b" </a></li>
+<li><a href="#" data-role="button" data-icon="folder-open">folder-open "\f07c" </a></li>
+<li><a href="#" data-role="button" data-icon="resize-vertical">resize-vertical "\f07d" </a></li>
+<li><a href="#" data-role="button" data-icon="resize-horizontal">resize-horizontal "\f07e" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-a">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="bar-chart">bar-chart "\f080" </a></li>
+<li><a href="#" data-role="button" data-icon="twitter-sign">twitter-sign "\f081" </a></li>
+<li><a href="#" data-role="button" data-icon="facebook-sign">facebook-sign "\f082" </a></li>
+<li><a href="#" data-role="button" data-icon="camera-retro">camera-retro "\f083" </a></li>
+<li><a href="#" data-role="button" data-icon="key">key "\f084" </a></li>
+<li><a href="#" data-role="button" data-icon="cogs">cogs "\f085" </a></li>
+<li><a href="#" data-role="button" data-icon="comments">comments "\f086" </a></li>
+<li><a href="#" data-role="button" data-icon="thumbs-up">thumbs-up "\f087" </a></li>
+<li><a href="#" data-role="button" data-icon="thumbs-down">thumbs-down "\f088" </a></li>
+<li><a href="#" data-role="button" data-icon="star-half">star-half "\f089" </a></li>
+<li><a href="#" data-role="button" data-icon="heart-empty">heart-empty "\f08a" </a></li>
+<li><a href="#" data-role="button" data-icon="signout">signout "\f08b" </a></li>
+<li><a href="#" data-role="button" data-icon="linkedin-sign">linkedin-sign "\f08c" </a></li>
+<li><a href="#" data-role="button" data-icon="pushpin">pushpin "\f08d" </a></li>
+<li><a href="#" data-role="button" data-icon="external-link">external-link "\f08e" </a></li>
+
+<li><a href="#" data-role="button" data-icon="signin">signin "\f090" </a></li>
+<li><a href="#" data-role="button" data-icon="trophy">trophy "\f091" </a></li>
+<li><a href="#" data-role="button" data-icon="github-sign">github-sign "\f092" </a></li>
+<li><a href="#" data-role="button" data-icon="upload-alt">upload-alt "\f093" </a></li>
+<li><a href="#" data-role="button" data-icon="lemon">lemon "\f094" </a></li>
+<li><a href="#" data-role="button" data-icon="phone">phone "\f095" </a></li>
+<li><a href="#" data-role="button" data-icon="check-empty">check-empty "\f096" </a></li>
+<li><a href="#" data-role="button" data-icon="bookmark-empty">bookmark-empty "\f097" </a></li>
+<li><a href="#" data-role="button" data-icon="phone-sign">phone-sign "\f098" </a></li>
+<li><a href="#" data-role="button" data-icon="twitter">twitter "\f099" </a></li>
+<li><a href="#" data-role="button" data-icon="facebook">facebook "\f09a" </a></li>
+<li><a href="#" data-role="button" data-icon="github">github "\f09b" </a></li>
+<li><a href="#" data-role="button" data-icon="unlock">unlock "\f09c" </a></li>
+<li><a href="#" data-role="button" data-icon="credit-card">credit-card "\f09d" </a></li>
+<li><a href="#" data-role="button" data-icon="rss">rss "\f09e" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-b">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="hdd">hdd "\f0a0" </a></li>
+<li><a href="#" data-role="button" data-icon="bullhorn">bullhorn "\f0a1" </a></li>
+<li><a href="#" data-role="button" data-icon="bell">bell "\f0a2" </a></li>
+<li><a href="#" data-role="button" data-icon="certificate">certificate "\f0a3" </a></li>
+<li><a href="#" data-role="button" data-icon="hand-right">hand-right "\f0a4" </a></li>
+<li><a href="#" data-role="button" data-icon="hand-left">hand-left "\f0a5" </a></li>
+<li><a href="#" data-role="button" data-icon="hand-up">hand-up "\f0a6" </a></li>
+<li><a href="#" data-role="button" data-icon="hand-down">hand-down "\f0a7" </a></li>
+<li><a href="#" data-role="button" data-icon="circle-arrow-left">circle-arrow-left "\f0a8" </a></li>
+<li><a href="#" data-role="button" data-icon="circle-arrow-right">circle-arrow-right "\f0a9" </a></li>
+<li><a href="#" data-role="button" data-icon="circle-arrow-up">circle-arrow-up "\f0aa" </a></li>
+<li><a href="#" data-role="button" data-icon="circle-arrow-down">circle-arrow-down "\f0ab" </a></li>
+<li><a href="#" data-role="button" data-icon="globe">globe "\f0ac" </a></li>
+<li><a href="#" data-role="button" data-icon="wrench">wrench "\f0ad" </a></li>
+<li><a href="#" data-role="button" data-icon="tasks">tasks "\f0ae" </a></li>
+
+<li><a href="#" data-role="button" data-icon="filter">filter "\f0b0" </a></li>
+<li><a href="#" data-role="button" data-icon="briefcase">briefcase "\f0b1" </a></li>
+<li><a href="#" data-role="button" data-icon="fullscreen">fullscreen "\f0b2" </a></li>
+
+<li><a href="#" data-role="button" data-icon="group">group "\f0c0" </a></li>
+<li><a href="#" data-role="button" data-icon="link">link "\f0c1" </a></li>
+<li><a href="#" data-role="button" data-icon="cloud">cloud "\f0c2" </a></li>
+<li><a href="#" data-role="button" data-icon="beaker">beaker "\f0c3" </a></li>
+<li><a href="#" data-role="button" data-icon="cut">cut "\f0c4" </a></li>
+<li><a href="#" data-role="button" data-icon="copy">copy "\f0c5" </a></li>
+<li><a href="#" data-role="button" data-icon="paper-clip">paper-clip "\f0c6" </a></li>
+<li><a href="#" data-role="button" data-icon="save">save "\f0c7" </a></li>
+<li><a href="#" data-role="button" data-icon="sign-blank">sign-blank "\f0c8" </a></li>
+<li><a href="#" data-role="button" data-icon="reorder">reorder "\f0c9" </a></li>
+<li><a href="#" data-role="button" data-icon="list-ul">list-ul "\f0ca" </a></li>
+<li><a href="#" data-role="button" data-icon="list-ol">list-ol "\f0cb" </a></li>
+<li><a href="#" data-role="button" data-icon="strikethrough">strikethrough "\f0cc" </a></li>
+<li><a href="#" data-role="button" data-icon="underline">underline "\f0cd" </a></li>
+<li><a href="#" data-role="button" data-icon="table">table "\f0ce" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-c">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="magic">magic "\f0d0" </a></li>
+<li><a href="#" data-role="button" data-icon="truck">truck "\f0d1" </a></li>
+<li><a href="#" data-role="button" data-icon="pinterest">pinterest "\f0d2" </a></li>
+<li><a href="#" data-role="button" data-icon="pinterest-sign">pinterest-sign "\f0d3" </a></li>
+<li><a href="#" data-role="button" data-icon="google-plus-sign">google-plus-sign "\f0d4" </a></li>
+<li><a href="#" data-role="button" data-icon="google-plus">google-plus "\f0d5" </a></li>
+<li><a href="#" data-role="button" data-icon="money">money "\f0d6" </a></li>
+<li><a href="#" data-role="button" data-icon="caret-down">caret-down "\f0d7" </a></li>
+<li><a href="#" data-role="button" data-icon="caret-up">caret-up "\f0d8" </a></li>
+<li><a href="#" data-role="button" data-icon="caret-left">caret-left "\f0d9" </a></li>
+<li><a href="#" data-role="button" data-icon="caret-right">caret-right "\f0da" </a></li>
+<li><a href="#" data-role="button" data-icon="columns">columns "\f0db" </a></li>
+<li><a href="#" data-role="button" data-icon="sort">sort "\f0dc" </a></li>
+<li><a href="#" data-role="button" data-icon="sort-down">sort-down "\f0dd" </a></li>
+<li><a href="#" data-role="button" data-icon="sort-up">sort-up "\f0de" </a></li>
+
+<li><a href="#" data-role="button" data-icon="envelope-alt">envelope-alt "\f0e0" </a></li>
+<li><a href="#" data-role="button" data-icon="linkedin">linkedin "\f0e1" </a></li>
+<li><a href="#" data-role="button" data-icon="undo">undo "\f0e2" </a></li>
+<li><a href="#" data-role="button" data-icon="legal">legal "\f0e3" </a></li>
+<li><a href="#" data-role="button" data-icon="dashboard">dashboard "\f0e4" </a></li>
+<li><a href="#" data-role="button" data-icon="comment-alt">comment-alt "\f0e5" </a></li>
+<li><a href="#" data-role="button" data-icon="comments-alt">comments-alt "\f0e6" </a></li>
+<li><a href="#" data-role="button" data-icon="bolt">bolt "\f0e7" </a></li>
+<li><a href="#" data-role="button" data-icon="sitemap">sitemap "\f0e8" </a></li>
+<li><a href="#" data-role="button" data-icon="umbrella">umbrella "\f0e9" </a></li>
+<li><a href="#" data-role="button" data-icon="paste">paste "\f0ea" </a></li>
+<li><a href="#" data-role="button" data-icon="lightbulb">lightbulb "\f0eb" </a></li>
+<li><a href="#" data-role="button" data-icon="exchange">exchange "\f0ec" </a></li>
+<li><a href="#" data-role="button" data-icon="cloud-download">cloud-download "\f0ed" </a></li>
+<li><a href="#" data-role="button" data-icon="cloud-upload">cloud-upload "\f0ee" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-d">
+  <ul class="font-group">
+
+<li><a href="#" data-role="button" data-icon="user-md">user-md "\f0f0" </a></li>
+<li><a href="#" data-role="button" data-icon="stethoscope">stethoscope "\f0f1" </a></li>
+<li><a href="#" data-role="button" data-icon="suitcase">suitcase "\f0f2" </a></li>
+<li><a href="#" data-role="button" data-icon="bell-alt">bell-alt "\f0f3" </a></li>
+<li><a href="#" data-role="button" data-icon="coffee">coffee "\f0f4" </a></li>
+<li><a href="#" data-role="button" data-icon="food">food "\f0f5" </a></li>
+<li><a href="#" data-role="button" data-icon="file-alt">file-alt "\f0f6" </a></li>
+<li><a href="#" data-role="button" data-icon="building">building "\f0f7" </a></li>
+<li><a href="#" data-role="button" data-icon="hospital">hospital "\f0f8" </a></li>
+<li><a href="#" data-role="button" data-icon="ambulance">ambulance "\f0f9" </a></li>
+<li><a href="#" data-role="button" data-icon="medkit">medkit "\f0fa" </a></li>
+<li><a href="#" data-role="button" data-icon="fighter-jet">fighter-jet "\f0fb" </a></li>
+<li><a href="#" data-role="button" data-icon="beer">beer "\f0fc" </a></li>
+<li><a href="#" data-role="button" data-icon="h-sign">h-sign "\f0fd" </a></li>
+<li><a href="#" data-role="button" data-icon="plus-sign-alt">plus-sign-alt "\f0fe" </a></li>
+
+<li><a href="#" data-role="button" data-icon="double-angle-left">double-angle-left "\f100" </a></li>
+<li><a href="#" data-role="button" data-icon="double-angle-right">double-angle-right "\f101" </a></li>
+<li><a href="#" data-role="button" data-icon="double-angle-up">double-angle-up "\f102" </a></li>
+<li><a href="#" data-role="button" data-icon="double-angle-down">double-angle-down "\f103" </a></li>
+<li><a href="#" data-role="button" data-icon="angle-left">angle-left "\f104" </a></li>
+<li><a href="#" data-role="button" data-icon="angle-right">angle-right "\f105" </a></li>
+<li><a href="#" data-role="button" data-icon="angle-up">angle-up "\f106" </a></li>
+<li><a href="#" data-role="button" data-icon="angle-down">angle-down "\f107" </a></li>
+<li><a href="#" data-role="button" data-icon="desktop">desktop "\f108" </a></li>
+<li><a href="#" data-role="button" data-icon="laptop">laptop "\f109" </a></li>
+<li><a href="#" data-role="button" data-icon="tablet">tablet "\f10a" </a></li>
+<li><a href="#" data-role="button" data-icon="mobile-phone">mobile-phone "\f10b" </a></li>
+<li><a href="#" data-role="button" data-icon="circle-blank">circle-blank "\f10c" </a></li>
+<li><a href="#" data-role="button" data-icon="quote-left">quote-left "\f10d" </a></li>
+<li><a href="#" data-role="button" data-icon="quote-right">quote-right "\f10e" </a></li>
+
+</ul>
+  </div>
+  <div class="preview ui-content ui-body-e">
+  <ul class="font-group">
+    
+<li><a href="#" data-role="button" data-icon="spinner">spinner "\f110" </a></li>
+<li><a href="#" data-role="button" data-icon="circle">circle "\f111" </a></li>
+<li><a href="#" data-role="button" data-icon="reply">reply "\f112" </a></li>
+<li><a href="#" data-role="button" data-icon="github-alt">github-alt "\f113" </a></li>
+<li><a href="#" data-role="button" data-icon="folder-close-alt">folder-close-alt "\f114" </a></li>
+<li><a href="#" data-role="button" data-icon="folder-open-alt">folder-open-alt "\f115" </a></li>
+
+</ul>
+</div>
+</div>
+</body>
+</html>
