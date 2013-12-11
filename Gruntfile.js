@@ -6,7 +6,14 @@ module.exports = function(grunt) {
   });
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-
+    copy : {
+        font: {
+            expand : true,
+            cwd : 'bower_components/font-awesome/',
+            src : [ 'fonts/*'],
+            dest : 'dist'
+        }
+    },
     recess : {
             testless : {
               options : {
@@ -20,14 +27,15 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['less/*.less'],
-      tasks: ['default']
+      tasks: ['recess']
     }
   });
 
   // CSS distribution task.
   // grunt.registerTask('test',['css']),
-  grunt.registerTask('default', 'recess');
+  grunt.registerTask('default', ['recess', 'copy']);
   // Load the plugin that provides the "Watch" task.
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 };
