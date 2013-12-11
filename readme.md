@@ -3,7 +3,7 @@
 This project integrate [Font Awesome](http://fontawesome.io/) with
 [jQuery Mobile](http://jquerymobile.com).
 
-You can find an [example page](http://toutpt.github.io/jQuery-Mobile-Font-Awesome/)
+You can find an [example page](http://makinacorpus.github.io/jQuery-Mobile-Font-Awesome/)
 
 # Versions
 
