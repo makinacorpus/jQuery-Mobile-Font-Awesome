@@ -1,3 +1,7 @@
 /.project
+/.pydevproject
 /.settings
 /bower_components
+/bin
+/part
+/.installed.cfg
