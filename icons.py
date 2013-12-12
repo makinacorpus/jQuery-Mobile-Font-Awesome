@@ -15,6 +15,8 @@ def getCategories(icons):
             if category not in categories:
                 categories[category] = []
             categories[category].append(icon['id'])
+    for category in categories:
+        categories[category].sort()
     return categories
 
 CATEGORY_TPL = """
@@ -45,7 +47,7 @@ if __name__ == '__main__':
         icons = categories[category]
         category_length = len(icons)
         col_length = int(math.ceil(category_length/4.0))
-        for col in ('a', 'b', 'c', 'd'):
+        for col in ('a', 'b', 'c', 'e'):
             col_content = ""
             if col == 'a':
                 start = 0
@@ -56,7 +58,7 @@ if __name__ == '__main__':
             elif col == 'c':
                 start = col_length * 2
                 end = col_length * 3
-            elif col == 'd':
+            elif col == 'e':
                 start = col_length * 3
                 end = -1
             for icon in icons[start:end]:

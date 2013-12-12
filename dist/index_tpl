@@ -6,19 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.css" />
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+  <link rel="shortcut icon" href="favicon.ico">
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
   <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
   <style>
     div[data-role="page"]{background:#fff;}
-    .preview{
-      width:280px;
-      float:left;
-      border:none;
-      margin:4px 0 4px 8px;
-    }
-    span.icon-value,
-    span.icon-name{margin: 10px 10px; width: 130px;}
-    .conflict{color: red!important}
   </style>
 </head>
 <body>
